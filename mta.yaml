@@ -17,6 +17,15 @@ modules:
 
  
 
+
+ - name: nodemodule
+   type: nodejs
+   path: nodemodule
+   provides:
+    - name: nodemodule_api
+      properties:
+         url: ${default-url}
+
 resources:
  - name: uaa_mtaproject1
    parameters:
